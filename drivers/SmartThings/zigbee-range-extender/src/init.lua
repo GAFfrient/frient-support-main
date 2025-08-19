@@ -31,6 +31,7 @@ local zigbee_range_driver_template = {
     }
   },
   health_check = false,
+    sub_drivers = { require("frient") },
 }
 
 local zigbee_range_extender_driver = ZigbeeDriver("zigbee-range-extender", zigbee_range_driver_template)

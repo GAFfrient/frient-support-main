@@ -1,0 +1,14 @@
+name: range-extender-battery-source
+components:
+- id: main
+  capabilities:
+  - id: firmwareUpdate
+    version: 1
+  - id: refresh
+    version: 1
+  - id: battery
+    version: 1
+  - id: powerSource
+    version: 1
+  categories:
+  - name: Networking
