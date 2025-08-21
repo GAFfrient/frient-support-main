@@ -250,7 +250,7 @@ local frient_smoke_sensor = {
     }
   },
   can_handle = function(opts, driver, device, ...)
-    return device:get_manufacturer() == "frient A/S" and device:get_model() == "SMSZB-120"
+    return device:get_manufacturer() == "frient A/S" and (device:get_model() == "SMSZB-120" or device:get_model() == "HESZB-120")
   end
 }
 return frient_smoke_sensor
