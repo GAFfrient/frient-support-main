@@ -2,7 +2,7 @@ name: heat-temp-battery-alarm
 components:
 - id: main
   capabilities:
-  - id: smokeDetector
+  - id: temperatureAlarm
     version: 1
   - id: temperatureMeasurement
     version: 1
@@ -25,7 +25,7 @@ components:
             - off
             - siren
   categories:
-  - name: SmokeDetector
+  - name: TempSensor
 preferences:
   - preferenceId: tempOffset
     explicit: true
